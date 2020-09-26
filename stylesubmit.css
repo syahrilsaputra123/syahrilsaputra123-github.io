@@ -1,0 +1,465 @@
+/*ini adalah reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body *{
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*ini adalah akhir reset*/
+
+@font-face {
+	font-family: "GrandHotel-Regular";
+	src: url('jenis-font/GrandHotel-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: "LeagueSpartan-Bold";
+	src: url('jenis-font/LeagueSpartan-Bold.otf') format('opentype');
+}
+@font-face {
+	font-family: "JosefinSans-Regular";
+	src: url('jenis-font/JosefinSans-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url('jenis-font/OpenSans-Regular.otf') format('opentype');
+}
+
+
+
+
+body {
+	margin: 0;
+	font-family:GrandHotel-Regular, sans-serif; 
+	box-sizing: border-box;
+}
+
+.gambarawal{	
+	width: 100%;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-image: url(image/clark-tibbs-oqStl2L5oxI-unsplash.jpg);
+	background-size:100% 600px;
+	margin-top:60px;
+	/*background-position: -5px;*/
+	border-top:3px solid violet;
+	
+	
+}	
+h1.judul {
+	display:inline-block;
+	color: white;
+ 	font-family: GrandHotel-Regular, sans-serif;
+ 	font-style: italic;
+ 	text-align: left;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: lowercase;
+	margin-top: 15px;
+	margin-left: 20px;
+	position: absolute;
+	/*text-shadow: 2px 2px 2px #ddd;*/
+}
+ header ul li {
+ 	font-size: 22px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 25px;
+}
+header ul li a {
+	text-decoration: none;
+	color: silver;
+	padding: 4px;
+}
+header ul li:hover a {
+	color: white;
+}
+header ul li:active a {
+	transition: .3s;
+}
+header figure{
+	margin-top: 10%;
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 2px 2px 2px black;
+
+}
+header figure p{
+	font-size: 20px;
+}
+header figure img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border:2px solid white;
+	object-fit: cover;
+	object-position: center;
+}
+
+nav{
+	background-color: grey;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+nav ul{
+	
+text-align: right;
+
+
+}
+
+
+main{
+	margin-top: 60px;
+
+	font-family:"GrandHotel-Regular", sans-serif ;
+	font-size: 15px;
+	display : flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+article .galeri{
+	display : flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+content{
+	flex: 2.5;
+	padding: 10px;
+	margin: 10px;
+	font-family:Sans-serif;
+
+}
+article{
+	margin-bottom: 40px;
+	padding: 10px;
+}
+article p{
+	padding: 10px;
+	color: grey;
+
+}
+
+.card{
+	box-shadow: 0px 2px 2px -1px rgba(0,0,0,.5);
+}
+.bagi-dua{
+	padding: 35px;
+	text-align: justify;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+
+content article h2,aside h2{
+	font-family: "LeagueSpartan-Bold";
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: darkgrey;
+
+}
+
+article .galeri li {
+	width: 120px;
+	height: 80px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 3px solid #666;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	margin-left: 12px;
+
+}
+
+.galeri li span {
+	display: block;
+	width: 120px;
+	height: 80px;
+	border-radius: 10px;
+	background-color:rgba(180,180,180,0.5);
+	font-size: 9px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	line-height: 80px;
+	text-align: center;
+	text-transform: uppercase;
+	opacity: 0;
+	transform: scale(0);
+	/*transform: rotate(0);*/
+	transition: 0.3s;
+	color: #333;
+
+
+}
+.galeri li a:hover span{
+	opacity: 1;
+	transform: scale(1.5);
+	/*transform: rotate(360deg);*/
+}
+
+
+.layarhitam{
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: 1s;
+	overflow: hidden;
+	text-align: center;
+}
+
+.layarhitam:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	
+	background-color: rgba(0,0,0,.5);
+}
+
+
+
+
+.layarhitam img {
+
+	margin: 100px;
+	max-width: 50%;
+	box-shadow: 1.5px 2px 2px 2px rgba(0,0,0,.5)
+
+}
+
+.layarhitam:target img {
+	animation: zoom 1s;
+}
+
+
+
+ .layarhitam .close {
+	position: absolute;
+	text-decoration: none;
+    color: white;
+    left: 50%;
+    top: 40px;
+    border: 1px solid white;
+    background-color: black;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px #ddd;
+}
+
+
+.layarhitam:target .close {
+	animation: closed .5s .5s forwards;
+}
+
+
+
+@keyframes closed {
+	0% {
+		opacity: 0;
+		margin-top: -20px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+
+
+@keyframes zoom {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}  
+
+.clear	{
+	clear: both;
+}
+
+#kontak{
+	font-family: "GrandHotel-Regular", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	flex: 1;
+	color: grey;
+	padding: 10px;
+	margin: 10px;
+}
+
+aside{
+	font-family: "OpenSans-Regular", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: grey;
+
+
+}
+
+aside img{
+	width: 15%;
+	height: 15%;
+	border: 6px solid darkgrey;
+	border-radius: 50%;
+	box-shadow: .5px 4px 2px rgba(0,0,0,.7);
+}
+aside p{
+	line-height: 15px;
+	font-size: 14px;
+	margin: auto 15%;
+}
+aside table{
+	font-family: "GrandHotel-Regular", sans-serif;
+	margin-left: 41%;
+	text-align: justify;
+}
+aside table tr{
+		height: 30px;
+}
+
+
+footer{
+	background-color: grey;
+	width: 100%;
+	max-height: 70px;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+}
+
+
+
+
+@media screen and (max-width: 950px){
+
+
+	article p, aside p{
+		font-size: 12px;
+	}
+
+	article .galeri{
+		display: block;
+		column-count: 2;
+
+	}
+	article .galeri li {
+		margin-bottom: 20px;
+	}
+	.bagi-dua{
+	padding: 35px;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	}
+	
+	.gambarawal{	
+	width: 100%;
+	max-height: 250px;
+	background-repeat: no-repeat;
+	background-image: url(image/clark-tibbs-oqStl2L5oxI-unsplash.jpg)
+	background-size:100% 600px;
+	margin-top:60px;
+	background-position: -5px -150px;
+	border-top:3px solid violet;
+	}
+	
+	header figure{
+	margin-top: 5%;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px black;
+
+}
+header figure p{
+	font-size: 16px;
+}
+header figure img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 20px;
+	border:2px solid white;
+	object-fit: cover;
+	object-position: center;
+}
+textarea{
+	width: 70%;
+
+}
+
+aside table{
+	margin-left: 21%;
+}
+aside p{
+	margin: auto 2%;
+}
+
+aside img{
+	width: 30%;
+	height: 30%;
+}
+h1.judul {
+	font-size: 30px;
+	margin-left: 17px;
+}
+}
